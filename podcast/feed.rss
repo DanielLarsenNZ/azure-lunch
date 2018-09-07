@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/styles/xslt/rss.xslt"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+<channel>
+	<title>Azure Lunch</title>
+    <atom:link rel="self" type="application/rss+xml" href="https://azurelunchaue.blob.core.windows.net/podcast/feed.rss"></atom:link>
+    <itunes:summary>News and analysis of Microsoft Azure with a Kiwi perspective in bite-sized chunks.</itunes:summary>
+    <googleplay:author>Auckland Azure Lunchtime Meetup</googleplay:author>
+    <itunes:author>Auckland Azure Lunchtime Meetup</itunes:author>
+    <googleplay:email>azlunch@outlook.com</googleplay:email>
+    <itunes:email>azlunch@outlook.com</itunes:email>
+    <itunes:subtitle></itunes:subtitle>
+	  <itunes:explicit>no</itunes:explicit>
+    <image>
+      <url>https://azurelunchaue.blob.core.windows.net/podcast/logo.png</url>
+      <title>Azure Lunch</title>
+      <link>https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/</link>
+    </image>
+    <itunes:image href="https://azurelunchaue.blob.core.windows.net/podcast/logo.png"></itunes:image>
+    <itunes:category text="Technology"></itunes:category>
+    <description>News and analysis of Microsoft Azure with a Kiwi perspective in bite-sized chunks.</description>
+    <link>https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/</link>
+    <language>en</language>
+    <pubDate>Fri, 7 sep 2018 08:50:00 GMT</pubDate>
+    <lastBuildDate>Fri, 7 sep 2018 08:50:00 GMT</lastBuildDate>
+    <item>
+      <title>Azure Lunch Pilot - Reserved capacity pricing for Azure SQL DB, Secure DevOps Kit, Azure Media Services</title>
+      <description><![CDATA[<p>This week Daniel Larsen and Matt Simpson, Senior Technical Evangelists at Microsoft, discuss the new 
+reserved capacity pricing model for Azure SQL DB, the Secure DevOps Kit for Azure, and some fun we've been having with Azure Media Services.</p>
+
+<p>
+Show links:
+    <ul>
+        <li><a href="https://aka.ms/nzpartnerhub">Microsoft NZ Partner Hub</a></li>
+        <li><a href="https://partner.microsoft.com/en-nz/campaigns/cloud-practice-playbooks">Cloud practice playbooks</a></li>
+        <li><a href="https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-azure-sql-database-reserved-capacity/">Announcing general availability of Azure SQL Database reserved capacity</a></li>
+        <li><a href="https://www.youtube.com/watch?v=ukdW9eTv3uw">Getting started with the Secure DevOps Kit for Azure</a></li>
+        <li><a href="https://azure.microsoft.com/en-us/services/media-services/">Azure Media Services</a></li>
+    </ul>
+</p>
+
+<p>Azure Lunch is a regular podcast of news and views from Microsoft Azure with a kiwi slant. Today's episode is sponsored by
+    the Microsoft NZ Partner Hub. If you're building software or providing services related to Microsoft products then you should
+    check out the Partner hub for training, advice and a heap of resources including the Partner Practice Playbooks - 
+    <a href="https://aka.ms/nzpartnerhub">https://aka.ms/nzpartnerhub</a>
+</p>
+
+<p>Thanks to SilverWHK for the use of his music in our podcast: <a href="https://silverwhk.bandcamp.com/">https://silverwhk.bandcamp.com</a></p>
+
+<p>Daniel Larsen and Matt Simpson are employees of Microsoft. The opinions expressed in this podcast are their own and not an official company statement.</p>
+]]></description>
+      <itunes:summary>This week Daniel Larsen and Matt Simpson, Senior Technical Evangelists at Microsoft, discuss the new reserved capacity 
+        pricing model for Azure SQL DB, the Secure DevOps Kit for Azure, and some fun we've been having with Azure Media Services.</itunes:summary>
+      <itunes:duration>1179</itunes:duration>
+      <link>https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/</link>
+      <pubDate>Fri, 7 sep 2018 08:50:00 GMT</pubDate>
+      <guid isPermaLink="false">https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/</guid>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/s1e01_100.jpg" height="75" width="100"></media:thumbnail>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/s1e01_220.jpg" height="165" width="220"></media:thumbnail>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/s1e01_960.jpg" height="384" width="512"></media:thumbnail>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/s1e01_960.jpg" height="720" width="960"></media:thumbnail>
+      <media:group>
+        <media:content url="https://azurelunchaue.blob.core.windows.net/podcasts/azure-lunch-07092018.mp3" expression="full" duration="1179" 
+          fileSize="28924952" type="audio/mpeg" medium="audio"></media:content>
+      </media:group>      
+      <enclosure url="https://azurelunchaue.blob.core.windows.net/podcasts/azure-lunch-07092018.mp3" length="28924952" type="audio/mpeg"></enclosure>
+      <dc:creator>Daniel Larsen, Matt Simpson</dc:creator>
+      <itunes:author>Daniel Larsen, Matt Simpson</itunes:author>
+      <category>Azure</category>
+      <category>DevOps</category>
+      <category>Azure SQL DB</category>
+      <category>Azure Media Services</category>
+    </item>
+    <item>
+      <title>Making events FaaSter - Event Grid and Functions as a Service (FaaS)</title>
+      <description><![CDATA[<p>This month we take a look at Azure Functions v2, Durable Functions and Event Grid. This recording from the
+      Auckland Azure Lunchtime Meetup includes an overview of the technology, examples of how to create event driven pipelines and lots of demos and code to share.</p>]]></description>
+      <comments>https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/events/253397567/</comments>
+      <itunes:summary>This month we take a look at Azure Functions v2, Durable Functions and Event Grid. This recording from the
+      Auckland Azure Lunchtime Meetup includes an overview of the technology, examples of how to create event driven pipelines and lots of demos and code to share.</itunes:summary>
+      <itunes:duration>3787</itunes:duration>
+      <link>https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/events/253397567/</link>
+      <pubDate>Thu, 31 Aug 2018 02:56:00 GMT</pubDate>
+      <guid isPermaLink="false">https://www.meetup.com/Auckland-Azure-Lunchtime-Meetup/events/253397567/</guid>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/alm30083018_100.png" height="56" width="100"></media:thumbnail>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/alm30083018_220.png" height="123" width="220"></media:thumbnail>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/alm30083018_512.png" height="288" width="512"></media:thumbnail>
+      <media:thumbnail url="https://azurelunchaue.blob.core.windows.net/podcasts/alm30083018_960.png" height="540" width="960"></media:thumbnail>
+      <media:group>
+        <media:content url="https://azurelunchaue.blob.core.windows.net/podcasts/Azure_Lunchtime_Meetup_Wednesday_29_August_2018.mp4" expression="full" duration="3787" fileSize="146529805" type="video/mp4" medium="video"></media:content>
+      </media:group>      
+      <enclosure url="https://azurelunchaue.blob.core.windows.net/podcasts/Azure_Lunchtime_Meetup_Wednesday_29_August_2018.mp4" length="146529805" type="video/mp4"></enclosure>
+      <dc:creator>Matt Simpson</dc:creator>
+      <itunes:author>Matt Simpson</itunes:author>
+      <category>Azure</category>
+      <category>Azure Functions</category>
+      <category>FaaS</category>
+      <category>Serverless</category>
+    </item>
+</channel>
+</rss>
