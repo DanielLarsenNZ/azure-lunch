@@ -2,23 +2,20 @@ addEventListener('fetch', event => {
     event.respondWith(handle(event.request))
 })
 
-const _ = require("applicationinsights")
+const _ = require("applicationinsights-js");
 
-appInsights.setup({ instrumentationKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx" });
-appInsights.start();
-
-function trackEvent(name) {
-    try {
-        console.log(`metrics:trackEvent:${name}`);
-        appInsights.defaultClient.trackEvent({ name: name });
-    } catch (e) {
-        // log and continue
-        console.error(e);
-    }
-}
+var snippet = {   
+    config: {   
+        instrumentationKey: "393b3c89-feb0-4a30-be29-899686aaae90"   
+    }   
+};   
+var init = new Microsoft.ApplicationInsights.Initialization(snippet);   
+var appInsights = init.loadAppInsights();   
+appInsights.trackPageView();   
 
 async function handleRequest(request) {
     console.log('Got request', request)
+    appInsights.trackPageView();  
   const modifiedRequest = new Request('https://msimpson.co.nz');
   return fetch(modifiedRequest);
   }
