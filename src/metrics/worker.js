@@ -24,21 +24,26 @@ async function handle(event) {
     //return fetch(modifiedRequest);
 
     // validate URL
-    if (!url.startsWith('https://msimpson.co.nz/podcasts/')) {
-        event.respondWith(
-            new Response.error()
-        );
-        return;
+    
+    if (!request.url.startsWith('https://msimpson.co.nz/podcasts/')) {
+        console.log("Not a valid URL - /podcasts/ not found");
+        return Response.error();
+        // event.respondWith(
+        //     new Response.error()
+        // );
+        // return;
     }
 
     // get and validate episode
-    var url = request.url.replace('https://msimpson.co.nz/podcasts/', 'https://azurelunchnz.azureedge.net/podcasts/')
+    var url = request.url.replace('https://msimpson.co.nz/podcasts/', 'https://azurelunchnz.azureedge.net/podcasts/');
     var episode = url.replace('https://azurelunchnz.azureedge.net/podcasts/', '');
     if (episode.length == 0) {
-        event.respondWith(
-            new Response.error()
-        );
-        return;
+        console.log("Not a valid URL - No episode name found")
+        return Response.error();
+        // event.respondWith(
+        //     new Response.error()
+        // );
+        // return;
     }
 
     // track the download
