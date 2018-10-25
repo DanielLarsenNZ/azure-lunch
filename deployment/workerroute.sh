@@ -1,0 +1,2 @@
+curl -X POST "https://api.cloudflare.com/client/v4/zones/:zone_id/workers/filters" -H
+"X-Auth-Email:YOUR_CLOUDFLARE_EMAIL" -H "X-Auth-Key:ACCOUNT_AUTH_KEY" -H "Content-type: application/json" -d '{"pattern": "msimpson.co.nz/podcasts/*", "enabled": true}'

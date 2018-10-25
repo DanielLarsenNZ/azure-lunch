@@ -1,0 +1,1 @@
+curl -X PUT "https://api.cloudflare.com/client/v4/zones/:zone_id/workers/script" -H "X-Auth-Email:YOUR_CLOUDFLARE_EMAIL" -H "X-Auth-Key:ACCOUNT_AUTH_KEY" -H "Content-Type:application/javascript" --data-binary "c:/r/azure-lunch/src/metrics/dist/main.js"
