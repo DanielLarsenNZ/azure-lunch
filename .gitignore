@@ -2,6 +2,7 @@
 *.mp4
 
 node_modules
+dist
 .env
 .vscode
 *.js.map
