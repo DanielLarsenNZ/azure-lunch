@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<episode>
+    <title>Azure Lunch - SQL Heavy!</title>
+    <description><![CDATA[<p>In this episode <a href="https://twitter.com/DanielLarsenNZ"> Daniel Larsen</a> and
+<a href="https://twitter.com/msimpsonnz">Matt Simpson</a>, Senior Technical Evangelists at
+Microsoft, go "SQL Heavy" with some of the SQL Server news from Ignite 2018, including Azure SQL
+Managed Instances, Azure SQL Hyperscale and SQL Server 2019!</p>
+
+<p>Show links:</p>
+<ul>
+<li><a href="https://aka.ms/nzpartnerhub">Microsoft NZ Partner Hub</a></li>
+<li><a href="https://partner.microsoft.com/en-nz/campaigns/cloud-practice-playbooks">Cloud practice playbooks</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance">Use SQL Database Managed Instance with virtual networks and near 100% compatibility</a></li>
+<li><a href="https://azure.microsoft.com/en-us/blog/announcing-azure-sql-database-hyperscale-public-preview/">Announcing Azure SQL Database Hyperscale public preview</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-service-tier-hyperscale">Hyperscale service tier (preview) for up to 100 TB</a></li>
+<li><a href="https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-ver15?view=sqlallproducts-allversions">What's new in SQL Server 2019</a>
+<li><a href="https://myignite.techcommunity.microsoft.com/sessions/65798#ignite-html-anchor">Ignite 2018: Azure SQL Database Hyperscale (Video)</a></li>
+<li><a href="https://info.microsoft.com/ww-landing-SQLDB-Microsoft-SQL-Server-WhitePaper.html">Download the Microsoft SQL Server 2019 technical white paper</a></li>
+</ul>
+
+<p>Azure Lunch is a regular podcast of news and views from Microsoft Azure with a Kiwi slant. Today's episode
+is sponsored by the Microsoft NZ Partner Hub. If you're building software or providing services related
+to Microsoft products then you should check out the Partner hub for training, advice and a heap of resources
+including the Partner Practice Playbooks - <a href="https://aka.ms/nzpartnerhub">https://aka.ms/nzpartnerhub</a></p>
+
+<p>Thanks to SilverWHK for the use of his music in our podcast: <a href="https://silverwhk.bandcamp.com/">https://silverwhk.bandcamp.com</a></p>
+
+<p>Daniel Larsen and Matt Simpson are employees of Microsoft. The opinions expressed in this podcast are
+their own and not an official company statement.</p>
+]]>    </description>
+    <summary>In this episode Daniel Larsen and Matt Simpson, Senior Technical Evangelists at Microsoft, go "SQL Heavy" with some
+      of the SQL Server news from Ignite 2018, including Azure SQL Managed Instances, Azure SQL Hyperscale and SQL Server 2019!</summary>
+    <webpage_link>https://github.com/DanielLarsenNZ/azure-lunch/blob/master/podcasts/s1e03.md</webpage_link>
+    <publish_date>Wed, 17 oct 2018 08:04:00 GMT</publish_date>
+    <uri>https://github.com/DanielLarsenNZ/azure-lunch/blob/master/podcasts/s1e03.md</uri>
+    <media_thumbnail_url_960_720>https://azurelunchnz.azureedge.net/podcasts/s1e01_960.jpg</media_thumbnail_url_960_720>
+    <media_url>https://azurelunchnz.azureedge.net/podcasts/azure-lunch-s1e03.mp3</media_url>
+    <media_duration>1157</media_duration>
+    <media_filesize>20786641</media_filesize>
+    <media_type>audio/mpeg</media_type>
+    <media_medium>audio</media_medium>
+    <category_1>Microsoft</category_1>
+    <category_2>Azure</category_2>
+    <category_3>SQL Server</category_3>
+</episode>
