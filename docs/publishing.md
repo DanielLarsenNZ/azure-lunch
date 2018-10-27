@@ -8,3 +8,4 @@ XSLT Basic Example: <https://developer.mozilla.org/en-US/docs/Web/API/XSLTProces
 
 XML Tools: <https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml>
 
+Getting `xml()` function to work: <https://stackoverflow.com/a/44179366/610731>
