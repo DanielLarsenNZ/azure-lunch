@@ -1,0 +1,135 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Compose_2": {
+                "inputs": {
+                    "episodes": {
+                        "entities": "@body('Get_entities')?['value']",
+                        "pubDate": "@{utcNow('r')}"
+                    }
+                },
+                "runAfter": {
+                    "Get_entities": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Compose"
+            },
+            "Create_block_blob": {
+                "inputs": {
+                    "body": "@body('Transform_XML_2')",
+                    "headers": {
+                        "Content-Type": "application/rss+xml"
+                    },
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['azureblob']['connectionId']"
+                        }
+                    },
+                    "method": "post",
+                    "path": "/codeless/CreateBlockBlob",
+                    "queries": {
+                        "folderPath": "/podcast",
+                        "name": "feed.rss"
+                    }
+                },
+                "runAfter": {
+                    "Transform_XML_2": [
+                        "Succeeded"
+                    ]
+                },
+                "runtimeConfiguration": {
+                    "contentTransfer": {
+                        "transferMode": "Chunked"
+                    }
+                },
+                "type": "ApiConnection"
+            },
+            "Get_entities": {
+                "inputs": {
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['azuretables']['connectionId']"
+                        }
+                    },
+                    "method": "get",
+                    "path": "/Tables/@{encodeURIComponent('episodes')}/entities"
+                },
+                "runAfter": {},
+                "type": "ApiConnection"
+            },
+            "Response": {
+                "inputs": {
+                    "body": "@body('Transform_XML_2')",
+                    "headers": {
+                        "Content-Type": "application/rss+xml"
+                    },
+                    "statusCode": 200
+                },
+                "kind": "Http",
+                "runAfter": {
+                    "Update_blob": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Response"
+            },
+            "Transform_XML_2": {
+                "inputs": {
+                    "content": "@{xml(outputs('Compose_2'))}",
+                    "integrationAccount": {
+                        "map": {
+                            "name": "feed-rss"
+                        }
+                    }
+                },
+                "runAfter": {
+                    "Compose_2": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "Xslt"
+            },
+            "Update_blob": {
+                "inputs": {
+                    "body": "@body('Transform_XML_2')",
+                    "headers": {
+                        "Content-Type": "application/rss+xml"
+                    },
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['azureblob']['connectionId']"
+                        }
+                    },
+                    "method": "put",
+                    "path": "/datasets/default/files/@{encodeURIComponent(encodeURIComponent('/podcast/feed.rss'))}"
+                },
+                "runAfter": {
+                    "Create_block_blob": [
+                        "Succeeded"
+                    ]
+                },
+                "type": "ApiConnection"
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
+            }
+        },
+        "triggers": {
+            "manual": {
+                "inputs": {
+                    "method": "POST",
+                    "schema": {}
+                },
+                "kind": "Http",
+                "type": "Request"
+            }
+        }
+    }
+}
