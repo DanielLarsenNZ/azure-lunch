@@ -9,6 +9,11 @@
 1. Check the new links
 1. Wait an hour (feed.rss TTL is 3600) and then refresh the Apple feed
 
+```powershell
+# In PowerShell: to get the current GMT date time in ISO format: 
+(Get-Date).ToUniversalTime().ToString('r')
+```
+
 ## Links
 
 Working with xml in Logic Apps: <https://integration.team/2017/07/14/working-xml-logic-apps/>
