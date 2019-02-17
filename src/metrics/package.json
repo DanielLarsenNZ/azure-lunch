@@ -12,6 +12,7 @@
     "applicationinsights-js": "^1.0.20"
   },
   "devDependencies": {
+    "fetch": "^1.1.0",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2"
   }
