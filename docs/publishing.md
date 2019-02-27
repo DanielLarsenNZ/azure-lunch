@@ -13,6 +13,7 @@ On voice:
 # Publishing
 
 1. Copy a `./podcasts/(episode).md` file and edit the relevant details.
+1. git add, commit, push
 1. Add a new row in the `episodes` table
 1. Ensure assets are uploaded to storage account `azurelunchaue`:
    1. mp3/mp4
