@@ -1,5 +1,18 @@
+# Post-production and Publishing
+
+## Post-production
+
+On voice:
+
+1. Normalise
+1. De-noise 12db, 6.00, 3
+1. Bass -3db
+1. Compressor -12db - -20db threshhold, -40db floor, 4:1 ratio, 0,2 secs attack, 1.0 secs release
+1. Limiter: 0, 0, 0, 10ms, Yes
+
 # Publishing
 
+1. Copy a `./podcasts/(episode).md` file and edit the relevant details.
 1. Add a new row in the `episodes` table
 1. Ensure assets are uploaded to storage account `azurelunchaue`:
    1. mp3/mp4
