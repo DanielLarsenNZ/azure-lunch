@@ -6,7 +6,8 @@
   xmlns:atom="http://www.w3.org/2005/Atom" 
   xmlns:media="http://search.yahoo.com/mrss/" 
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
-  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+  xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
 
   <xsl:output method="xml" indent="yes" cdata-section-elements="description" encoding="utf-8" />
 
