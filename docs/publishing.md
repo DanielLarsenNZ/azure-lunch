@@ -5,10 +5,10 @@
 On voice:
 
 1. Normalise
-1. De-noise 12db, 6.00, 3
 1. Bass -3db
+1. De-noise 12db, 6.00, 3
+1. Limiter: 6, 6, 0, 10ms, Yes
 1. Compressor -12db - -20db threshhold, -40db floor, 4:1 ratio, 0,2 secs attack, 1.0 secs release
-1. Limiter: 0, 0, 0, 10ms, Yes
 
 # Publishing
 

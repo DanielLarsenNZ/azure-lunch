@@ -45,15 +45,27 @@
       <title>
         <xsl:value-of select="title" />
       </title>
+      <itunes:title>
+        <xsl:value-of select="title" />
+      </itunes:title>
       <description>
         <xsl:value-of select="description" disable-output-escaping="yes" />
       </description>
+      <content:encoded>
+        <xsl:value-of select="description" disable-output-escaping="yes" />
+      </content:encoded>
       <itunes:summary>
         <xsl:value-of select="summary" />
       </itunes:summary>
       <itunes:duration>
         <xsl:value-of select="media_duration" />
       </itunes:duration>
+      <itunes:series>
+        <xsl:value-of select="series" />
+      </itunes:series>
+      <itunes:episode>
+        <xsl:value-of select="episode" />
+      </itunes:episode>
       <link>
         <xsl:value-of select="webpage_link" />
       </link>
