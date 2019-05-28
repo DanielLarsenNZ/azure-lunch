@@ -84,7 +84,7 @@
       <media:group>
         <media:content expression="full">
           <xsl:attribute name="url">
-            <xsl:value-of select="media_url" />
+            https://azurelunch.azurefd.net/episodes/<xsl:value-of select="media_url" />
           </xsl:attribute>
           <xsl:attribute name="duration">
             <xsl:value-of select="media_duration" />
@@ -102,7 +102,7 @@
       </media:group>
       <enclosure>
         <xsl:attribute name="url">
-          <xsl:value-of select="media_url" />
+          https://azurelunch.azurefd.net/episodes/<xsl:value-of select="media_url" />
         </xsl:attribute>
         <xsl:attribute name="length">
           <xsl:value-of select="media_filesize" />
