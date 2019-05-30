@@ -14,7 +14,8 @@
         <media_medium>audio</media_medium>
         <media_thumbnail_url_960_720>https://azurelunchnz.azureedge.net/podcasts/s1e01_960.jpg</media_thumbnail_url_960_720>
         <media_type>audio/mpeg</media_type>
-        <media_url>https://azurelunchnz.azureedge.net/podcasts/azure-lunch-s1e03.mp3</media_url>
+        <media_url>https://azurelunch.azurefd.net/episodes/azure-lunch-s1e03.mp3</media_url>
+        <media_file>azure-lunch-s1e03.mp3</media_file>
         <publish_date>Wed, 17 oct 2018 08:04:00 GMT</publish_date>
         <summary>In this episode Daniel Larsen and Matt Simpson, Senior Technical Evangelists at Microsoft, go \"SQL Heavy\" with some of the SQL Server news from Ignite 2018, including Azure SQL Managed Instances, Azure SQL Hyperscale and SQL Server 2019!</summary>
         <title>Azure Lunch - SQL Heavy!</title>

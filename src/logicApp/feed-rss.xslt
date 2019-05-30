@@ -81,9 +81,16 @@
           <xsl:value-of select="media_thumbnail_url_960_720" />
         </xsl:attribute>
       </media:thumbnail>
+      <xsl:variable name="media_url">
+        <xsl:choose>
+            <xsl:when test="media_url = ''"><xsl:value-of select="concat('https://azurelunch.azurefd.net/episodes/', media_file)" /></xsl:when>
+            <xsl:when test="not(media_url)"><xsl:value-of select="concat('https://azurelunch.azurefd.net/episodes/', media_file)" /></xsl:when>
+            <xsl:otherwise><xsl:value-of select="media_url" /></xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
       <media:group>
         <media:content expression="full">
-          <xsl:attribute name="url">https://azurelunch.azurefd.net/episodes/<xsl:value-of select="media_url" /></xsl:attribute>
+          <xsl:attribute name="url"><xsl:value-of select="$media_url" /></xsl:attribute>
           <xsl:attribute name="duration">
             <xsl:value-of select="media_duration" />
           </xsl:attribute>
@@ -99,7 +106,7 @@
         </media:content>
       </media:group>
       <enclosure>
-        <xsl:attribute name="url">https://azurelunch.azurefd.net/episodes/<xsl:value-of select="media_url" /></xsl:attribute>
+        <xsl:attribute name="url"><xsl:value-of select="$media_url" /></xsl:attribute>
         <xsl:attribute name="length">
           <xsl:value-of select="media_filesize" />
         </xsl:attribute>
