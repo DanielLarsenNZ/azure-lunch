@@ -1,6 +1,7 @@
 # Azure Lunch!
 
 ![Daniel Larsen and friends at Microsoft Build 2019](./s2point1reboot_960.png)
+_Photo credit: Chris Reddington_
 
 ## Azure Lunch Series 2.1 --reboot
 
