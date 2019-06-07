@@ -21,7 +21,8 @@ On voice:
 1. Trigger the Logic App
 1. Get <https://azurelunchnz.azureedge.net/podcast/feed.rss?v=2159> (bust the cache with the query string)
 1. Check the new links
-1. Wait an hour (feed.rss TTL is 3600) and then refresh the Apple feed
+1. Check `CacheControl` property on feed.rss blob: `max-age=3600`
+1. Wait an hour and then refresh the Apple feed
 
 ```powershell
 # In PowerShell: to get the current GMT date time in ISO format: 
@@ -37,3 +38,5 @@ XSLT Basic Example: <https://developer.mozilla.org/en-US/docs/Web/API/XSLTProces
 XML Tools: <https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml>
 
 Getting `xml()` function to work: <https://stackoverflow.com/a/44179366/610731>
+
+Setting Cache-Control headers in Blob storage / CDN: <https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-expiration-of-blob-content#setting-cache-control-headers-by-using-other-methods>
