@@ -6,7 +6,7 @@ _Photo credit: Chris Reddington_
 ## Azure Lunch Series 2.1 --reboot
 
 > S2E02.1: [Play the episode now](https://azurelunch.azurefd.net/episodes/azure-lunch-s2point1.mp3) |
-> [Subscribe on Apple Podcasts](https://itunes.apple.com/nz/podcast/azure-lunch/id1436427476?mt=2)
+> [Subscribe on Apple Podcasts](https://podcasts.apple.com/nz/podcast/azure-lunch/id1436427476)
 | [Subscribe on Android](https://subscribeonandroid.com/azurelunchnz.azureedge.net/podcast/feed.rss)
 
 <p>Azure Lunch podcast had an unplanned outage a few months ago while we took time adjust to a couple

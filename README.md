@@ -2,7 +2,7 @@
 
 ![Azure Lunch Logo](podcast/logo-small.png) ![Daniel Larsen and Matt Simpson](podcasts/20181026_960.jpg)
 
-* [Subscribe on Apple Podcasts](https://itunes.apple.com/nz/podcast/azure-lunch/id1436427476?mt=2)
+* [Subscribe on Apple Podcasts](https://podcasts.apple.com/nz/podcast/azure-lunch/id1436427476)
 * [Subscribe on Android](https://subscribeonandroid.com/azurelunchnz.azureedge.net/podcast/feed.rss)
 * [Blubrry](https://www.blubrry.com/azure_lunch/)
 * [Stitcher](https://www.stitcher.com/podcast/azure-lunch)
