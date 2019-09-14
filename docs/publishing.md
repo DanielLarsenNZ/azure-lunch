@@ -4,11 +4,14 @@
 
 On voice:
 
-1. Normalise
+1. Normalise (if needed)
 1. Bass -3db
-1. De-noise 12db, 6.00, 3
-1. Limiter: 6, 6, 0, 10ms, Yes
-1. Compressor -12db - -20db threshhold, -40db floor, 4:1 ratio, 0,2 secs attack, 1.0 secs release
+1. De-noise 12db, 6.00, 3 (if needed)
+1. Compressor: Threshold = -12db to -20db, Noise floor = -40db, Ratio = 4:1, Attack = 0.2 secs, Release 
+   = 1.0 secs, Make-up gain for 0db after compressing = ticked.
+1. Limiter: Soft limit, Input gains = 3db to 6db, Limit to 0db, Hold = 10ms, Apply Make-up gain = Yes
+1. Split Stereo to Mono
+1. Pan IV between 20% to 30% left, pan Guest 20% - 30% right
 
 # Publishing
 
