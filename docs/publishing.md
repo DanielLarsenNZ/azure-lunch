@@ -11,7 +11,7 @@ On voice:
    = 1.0 secs, Make-up gain for 0db after compressing = ticked.
 1. Limiter: Soft limit, Input gains = 3db to 6db, Limit to 0db, Hold = 10ms, Apply Make-up gain = Yes
 1. Split Stereo to Mono
-1. Pan IV between 20% to 30% left, pan Guest 20% - 30% right
+1. Pan IV between 20% to 30% left, pan Guest centre.
 
 # Publishing
 
@@ -43,3 +43,5 @@ XML Tools: <https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.x
 Getting `xml()` function to work: <https://stackoverflow.com/a/44179366/610731>
 
 Setting Cache-Control headers in Blob storage / CDN: <https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-expiration-of-blob-content#setting-cache-control-headers-by-using-other-methods>
+
+<https://podba.se/validate/>
