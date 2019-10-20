@@ -1,17 +1,77 @@
-# Post-production and Publishing
+# Production and Publishing
+
+In the field I record with RØDE Lavalier microphones and the [SC6-L Mobile Interview Kit](http://www.rode.com/microphones/sc6-lik)
+for iPhone. I upload the recording from my iPhone via OneDrive. Then it is available on my laptop as
+a stereo audio file ready for post-production.
+
+In "studio" environments (usually a meeting room) I use two [Behringer C-1 Studio Condenser Microphones](https://www.behringer.com/Categories/Behringer/Microphones/Condenser/C-1/p/P0226).
+These are the cheapest Condenser microphones I could find; they are fine for what I do. I notice that 
+one of the Behringers (the older one) is getting noisier with age. So invest more money in microphones
+if you would like them to last. I use a [Yamaha Steinberg UR44 Audio Interface](https://www.steinberg.net/en/products/audio_interfaces/ur_series/models/ur44.html),
+which I love, recording directly into an Audacity session.
 
 ## Post-production
 
-On voice:
+I use [Audacity](https://www.audacityteam.org/). It's an outstanding audio editor for the price (a donation).
+By the time I have an Audacity session open and ready to go I have one stereo audio file with the Interview
+audio. Each microphone's recording is split (and panned) left and right in the stereo track, ready to
+go.
 
-1. Normalise (if needed)
-1. Bass -3db
-1. De-noise 12db, 6.00, 3 (if needed)
-1. Compressor: Threshold = -12db to -20db, Noise floor = -40db, Ratio = 4:1, Attack = 0.2 secs, Release 
-   = 1.0 secs, Make-up gain for 0db after compressing = ticked.
-1. Limiter: Soft limit, Input gains = 3db to 6db, Limit to 0db, Hold = 10ms, Apply Make-up gain = Yes
-1. Split Stereo to Mono
-1. Pan IV between 20% to 30% left, pan Guest centre.
+### Noise reduction
+
+The very first thing I do is apply **Noise reduction**. Before I start the interview I record a few seconds
+of room noise for the Noise reduction profile. If the room is very noisy (conferences, cafes, etc) I
+apply a small amount of noise reduction to help the vocals stand out. If the room is quiet (meeting rooms,
+offices, areas with air conditioning noise) I use a lot more noise reduction.
+
+    Noise reduction: 
+        Noisy environment:  6db
+        Quiet environment:  12db
+    Sensitivity: 6.00
+    Frequency smoothing: 3
+    Noise: Reduce
+
+### Roll off some bass and normalize
+
+Next I apply the **Bass and Treble** effect:
+
+    Bass:   -3.0db
+    Treble:  0.0db
+    Output:  0.0db
+
+And then **Normalize**:
+
+    Remove DC offset: Tick
+    Normalize peak amplitude to: 0.0db
+    Normalize stereo channels independently: Untick
+
+Now I trim and edit the interview. I do this before I split the tracks to mono to make it easier to edit.
+
+### Sub-mix
+
+Once I'm happy with the interview edits I **Split Stereo to Mono** and **pan** the Interviewer track
+30% left and pan the Guest to centre. I then sub-mix down to a new Stereo Track ready for compression
+which I want to be on the overall Stereo mix.
+
+### Compression and limiting
+
+Finally I add compression and limiting. This will really help the voices cut through the background and
+make it easier for people to listen on ear buds and in noisy environments.
+
+    Compressor:
+        Threshold: -12db to -20db
+        Noise floor: -40db
+        Ratio: 4:1
+        Attack: 0.2 secs
+        Release: 1.0 secs
+        Make-up gain for 0db after compressing: Ticked
+        
+    Limiter: 
+        Soft limit
+        Input gains: 3db to 6db
+        Limit to: 0db
+        Hold: 10ms
+        Apply Make-up gain: Yes
 
 # Publishing
 
