@@ -78,13 +78,25 @@ make it easier for people to listen on ear buds and in noisy environments.
 1. Copy a `./podcasts/(episode).md` file and edit the relevant details.
 1. git add, commit, push
 1. Add a new row in the `episodes` table
+    1. Categories: Technology, Tech News, Microsoft Azure
+    1. Description: `<![CDATA[ ... ]]>`
+    1. Id: `s2e08`
+    1. Medium: `audio | video`
+    1. Media_thumbnail_url_960_720: `https://azurelunchnz.azureedge.net/podcasts/s2e08_960.jpg`
+    1. Media_type: `audio/mpeg`
+    1. Media_url: Only use for URLs that need to be fully qualifed, otherwise use `media_file`
+    1. publish_date: `(Get-Date).ToUniversalTime().ToString('r')`
+    1. Summary: Plain text version. 1 or two paras.
+    1. URI & webpage_link: https://github.com/DanielLarsenNZ/azure-lunch/blob/master/podcasts/s2e08.md
+    1. Media_file: `azure-lunch-s2e08.mp3`
 1. Ensure assets are uploaded to storage account `azurelunchaue`:
-   1. mp3/mp4
-   1. thumbnail
+    1. mp3/mp4
+    1. thumbnail
 1. Trigger the Logic App
 1. Get <https://azurelunchnz.azureedge.net/podcast/feed.rss?v=2159> (bust the cache with the query string)
 1. Check the new links
 1. Check `CacheControl` property on feed.rss blob: `max-age=3600`
+1. Test the feed: <https://podba.se/validate/?url=https://azurelunchnz.azureedge.net/podcast/feed.rss?v=2159>
 1. Wait an hour and then refresh the Apple feed
 
 ```powershell
