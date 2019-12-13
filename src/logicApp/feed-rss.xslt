@@ -20,7 +20,10 @@
         <googleplay:author>Daniel Larsen</googleplay:author>
         <itunes:author>Daniel Larsen</itunes:author>
         <googleplay:email>azlunch@outlook.com</googleplay:email>
-        <itunes:email>azlunch@outlook.com</itunes:email>
+        <itunes:owner>
+            <itunes:name>Daniel Larsen</itunes:name>
+            <itunes:email>azlunch@outlook.com</itunes:email>
+        </itunes:owner>
         <itunes:explicit>no</itunes:explicit>
         <image>
           <url>https://azurelunchnz.azureedge.net/podcast/logo.png</url>
