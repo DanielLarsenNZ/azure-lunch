@@ -1,6 +1,6 @@
-$xslt = "$($PSScriptRoot)/../feed-rss.xslt"
+$xslt = "$($PSScriptRoot)/../feed-rss-novid.xslt"
 $input = "$($PSScriptRoot)/feed-rss2.xml"
-$output = "$($PSScriptRoot)/feed-rss2.output.rss.xml"
+$output = "$($PSScriptRoot)/feed-rss-novid.output.rss.xml"
 
 
 $XSLInputElement = New-Object System.Xml.Xsl.XslCompiledTransform;

@@ -34,7 +34,7 @@
         <language>en</language>
         <pubDate><xsl:value-of select="pubDate" /></pubDate>
         <lastBuildDate><xsl:value-of select="pubDate" /></lastBuildDate>
-        <xsl:apply-templates select="entities">
+        <xsl:apply-templates select="entities[media_medium='audio']">
           <xsl:sort select="RowKey" data-type="text" order="descending"/>
         </xsl:apply-templates>
       </channel>
